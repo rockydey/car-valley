@@ -51,7 +51,7 @@
       "id": "623de594d4305a6a78de7315",
       "picture": "https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "price": 9.7,
-      "name": "Land Rover Discovery Sport"
+      "name": "Land Rover Sport"
     },
     {
       "id": "623de5942397f34e93ff1f5c",
@@ -63,12 +63,12 @@
       "id": "623de5941be0505abc4f6cf1",
       "picture": "https://images.unsplash.com/flagged/photo-1557225586-c21e48488706?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       "price": 8.8,
-      "name": "Land Rover Range Rover Velar"
+      "name": "Range Rover Velar"
     },
     {
       "id": "623de594c2329d8e989da1b3",
       "picture": "https://images.unsplash.com/photo-1625648304525-17f4d460e5f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "price": 8.3,
-      "name": "Mercedes-Benz E-Class"
+      "name": "Mercedes E-Class"
     }
   ]
