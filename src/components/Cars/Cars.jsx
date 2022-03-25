@@ -8,8 +8,25 @@ const Cars = () => {
     const [cars, setCars] = useState([]);
     const [vehicles, setVehicles] = useState([]);
     const handleAddToCart = car => {
-        const newVehicle = [...vehicles, car]
-        setVehicles(newVehicle);
+        if (vehicles.length < 5) {
+            let newVehicle = [];
+            const exits = vehicles.find(vehicle => vehicle.id === car.id);
+            if (!exits) {
+                newVehicle = [...vehicles, car]
+            } else {
+                alert(exits.name + " already exits.");
+                const rest = vehicles.filter(vehicle => vehicle.id !== car.id);
+                newVehicle = [car, ...rest];
+            }
+            setVehicles(newVehicle);
+        }
+        else {
+            alert("Maximum Five Cars");
+        }
+    }
+    const chooseAgain = () => {
+        let empty = [];
+        setVehicles(empty);
     }
     useEffect(() => {
         fetch('cars.json')
@@ -29,7 +46,7 @@ const Cars = () => {
                     vehicles.map(vehicle => <Cart key={vehicle.id} vehicle={vehicle}></Cart>)
                 }
                 <button className='d-block px-4 py-2 border-0 rounded-3 mx-3 bg-success text-white fw-bold my-3'>Pick One</button>
-                <button className='d-block px-4 py-2 border-0 rounded-3 mx-3 bg-success text-white fw-bold'>Choose Again</button>
+                <button onClick={() => chooseAgain()} className='d-block px-4 py-2 border-0 rounded-3 mx-3 bg-success text-white fw-bold'>Choose Again</button>
             </div>
         </div>
     );

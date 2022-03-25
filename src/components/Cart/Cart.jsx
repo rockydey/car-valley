@@ -8,7 +8,7 @@ const Cart = ({ vehicle }) => {
     const { name, picture } = vehicle;
     return (
         <div className='cart d-flex justify-content-between align-items-center mx-3'>
-            <img className='rounded-circle' src={picture} alt="" />
+            <img className='rounded-pill' src={picture} alt="" />
             <h4 className='fs-5 my-3'>{name}</h4>
             <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
         </div>
