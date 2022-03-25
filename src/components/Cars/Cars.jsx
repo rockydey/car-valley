@@ -28,7 +28,7 @@ const Cars = () => {
     };
 
     const pickOne = () => {
-        const picker = Math.floor(Math.random() * 4);
+        const picker = Math.floor(Math.random() * vehicles.length);
         let pickValue = [];
         pickValue.push(vehicles[picker]);
         setVehicles(pickValue);
@@ -39,9 +39,9 @@ const Cars = () => {
         setVehicles(empty);
     };
 
-    const handleTrash = motorCar => {
+    const handleTrash = item => {
         let restCar = [];
-        const rest = vehicles.filter(vehicle => vehicle.id !== motorCar.id);
+        const rest = vehicles.filter(vehicle => vehicle.id !== item.id);
         restCar = [...rest];
         setVehicles(restCar);
     };
