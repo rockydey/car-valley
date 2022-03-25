@@ -24,10 +24,16 @@ const Cars = () => {
             alert("Maximum Five Cars");
         }
     }
+    const pickOne = () => {
+        const picker = Math.floor(Math.random() * 5);
+        let pickValue = [];
+        pickValue.push(vehicles[picker]);
+        setVehicles(pickValue);
+    };
     const chooseAgain = () => {
         let empty = [];
         setVehicles(empty);
-    }
+    };
     useEffect(() => {
         fetch('cars.json')
             .then(res => res.json())
@@ -45,7 +51,7 @@ const Cars = () => {
                 {
                     vehicles.map(vehicle => <Cart key={vehicle.id} vehicle={vehicle}></Cart>)
                 }
-                <button className='d-block px-4 py-2 border-0 rounded-3 mx-3 bg-success text-white fw-bold my-3'>Pick One</button>
+                <button onClick={() => pickOne()} className='d-block px-4 py-2 border-0 rounded-3 mx-3 bg-success text-white fw-bold my-3'>Pick One</button>
                 <button onClick={() => chooseAgain()} className='d-block px-4 py-2 border-0 rounded-3 mx-3 bg-success text-white fw-bold'>Choose Again</button>
             </div>
         </div>

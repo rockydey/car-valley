@@ -9,7 +9,7 @@
     margin: 0 90px;
 }
 .cart-container{
-    background-color: rgba(128, 128, 128, 0.25);
+    background-color: rgba(128, 128, 128, 0.25);;
 }
 .cart-container h3, button{
     font-family: 'Lato';

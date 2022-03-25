@@ -10,7 +10,7 @@ const Cart = ({ vehicle }) => {
         <div className='cart d-flex justify-content-between align-items-center mx-3'>
             <img className='rounded-pill' src={picture} alt="" />
             <h4 className='fs-5 my-3'>{name}</h4>
-            <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
+            <FontAwesomeIcon className='trash' icon={faTrash}></FontAwesomeIcon>
         </div>
     );
 };
