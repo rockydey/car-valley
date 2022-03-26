@@ -7,7 +7,7 @@ const FAQs = () => {
     return (
         <div className='faqs my-5'>
             <h1 className='text-center fs-2 fw-bold mb-4'>Answers to some <span className='text-success'>FAQs</span></h1>
-            <div className='mx-5'>
+            <div className='mx-lg-5 mx-auto accordion'>
                 <Accordion defaultActiveKey={['0']} flush>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header><span className='fs-5 fw-bold'>How does react work?</span></Accordion.Header>

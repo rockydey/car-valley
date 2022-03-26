@@ -2,3 +2,9 @@
     font-family: 'Lato';
     font-style: normal;
 }
+
+@media only screen and (max-width: 576px){
+    .accordion{
+        width: 300px;
+    }
+}
