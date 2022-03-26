@@ -1,6 +1,17 @@
 .cart img{
     width: 50px;
+    height: 50px;
 }
 .trash{
     cursor: pointer;
+}
+
+@media only screen and (max-width: 576px){
+    .cart img{
+        width: 30px;
+        height: 30px;
+    }
+    .cart h4{
+        font-size: 16px !important;
+    }
 }
